@@ -730,7 +730,6 @@ Option 6. All options are incorrect<br>
 <br>`]
 ];
 
-
   let timeoutId; // Declare a variable to store the timeout ID
   let ongoingElement = {};
     
@@ -838,15 +837,15 @@ Option 6. All options are incorrect<br>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 text-center">
         <ul class="list-inline">
-          <li> <a>Rongwu Xu<sup>1</sup></a> </li>
+          <li> <a href="https://rongwuxu.site">Rongwu Xu<sup>1</sup></a> </li>
           <li> <a>Brian S. Lin<sup>1†</sup></a> </li>
           <li> <a>Shujian Yang<sup>2†</sup></a> </li>
           <li> <a>Tianqi Zhang<sup>1†</sup></a> </li>
-          <li> <a>Weiyan Shi<sup>3*</sup></a></li>
-          <li> <a>Tianwei Zhang<sup>4</sup></a></li>
-          <li> <a>Zhixuan Fang<sup>1</sup></a></li>
-          <li> <a>Wei Xu<sup>1</sup></a></li>
-          <li> <a>Han Qiu<sup>1*</sup></a></li>
+          <li> <a href="https://wyshi.github.io">Weiyan Shi<sup>3*</sup></a></li>
+          <li> <a href="https://personal.ntu.edu.sg/tianwei.zhang/">Tianwei Zhang<sup>4</sup></a></li>
+          <li> <a href="https://people.iiis.tsinghua.edu.cn/~fang/">Zhixuan Fang<sup>1</sup></a></li>
+          <li> <a href="https://people.iiis.tsinghua.edu.cn/~weixu/">Wei Xu<sup>1</sup></a></li>
+          <li> <a href="https://qiuhan.info">Han Qiu<sup>1*</sup></a></li>
         </ul>
         <ul class="list-inline">
           <li> <sup>1</sup>Tsinghua University </li>
@@ -855,7 +854,7 @@ Option 6. All options are incorrect<br>
           <li> <sup>4</sup>Nanyang Technological University </li>
           <br />
           <li> <sup>†</sup>Equal Contribution</li>
-          <li> <sup>*</sup>Corresponding Author</li>
+          <li> <sup>*</sup>Corresponding Authors</li>
         </ul>
       </div>
     </div>
@@ -1041,10 +1040,19 @@ Option 6. All options are incorrect<br>
           <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-gpt-4.png" class="img-responsive"
             alt="overview" width="100%" style="margin:auto;padding-top: 1em">
           <p class="text-center">(b) GPT-4</p>
+          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-llama2-7b-chat.png" class="img-responsive"
+            alt="overview" width="100%" style="margin:auto;padding-top: 1em">
+          <p class="text-center">(c) Llama-2-7B-chat</p>
+          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-vicuna-v1.5-7b.png" class="img-responsive"
+            alt="overview" width="100%" style="margin:auto;padding-top: 1em">
+          <p class="text-center">(d) Vicuna-v1.5-7B</p>
+          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-vicuna-v1.5-13b.png" class="img-responsive"
+            alt="overview" width="100%" style="margin:auto;padding-top: 1em">
+          <p class="text-center">(e) Vicuna-v1.5-13B</p>
           <figcaption>
             <p class="text-justify">
               <span style="font-weight: bold; font-size: larger;">Figure 1. </span>
-              Main results on closed-source LLMs. We depict both the MR (<b>solid</b>) and ACC (<b>dashed</b>) metrics.
+              Main results on the tested closed-source and open-source LLMs. We depict both the MR (<b>solid</b>) and ACC (<b>dashed</b>) metrics.
               MR is the misinformed rate, and acc is the accuracy.
             </p>
           </figcaption>
@@ -1067,11 +1075,11 @@ Option 6. All options are incorrect<br>
                 <div class="panel-body" style="font-size: 16px;">
                   LLMs reveal a surprising susceptibility to change their beliefs when combating misinformation.
                   In the first turn, where only the <i>simplest</i> CTRL is used, target LLMs exhibit a proportion of
-                  belief alteration ranging from 9.6% to 63.5%.
+                  belief alteration ranging from 4.1% to 63.4%.
                   Moreover, as we progress to the fourth turn, the cumulative proportion of belief alteration spans from
-                  20.5% to 78.1%.
+                  20.7% to 78.2%.
                   This vulnerability is especially noteworthy, highlighting that even the most advanced model, GPT-4,
-                  bears a 20.5% susceptibility to misinformation.
+                  bears a 20.7% susceptibility to misinformation.
                 </div>
               </div>
             </div>
@@ -1168,7 +1176,7 @@ Option 6. All options are incorrect<br>
         <div class="text-justify">
           The dataset is curated by selecting questions that are easy to answer in a closed-book
           setting.
-          The dataset consists of 1,500 questions, with 500 each from BoolQ, Natural Questions (NQ), and TruthfulQA.
+          The dataset consists of 1,952 samples chosen from BoolQ, Natural Questions (NQ), and TruthfulQA.
           The questions are reformatted into multiple-choice questions, and the orders of the choices are shuffled.
           The misinformation corresponding to each question in the dataset includes:
           (1) Control: A simple and concise statement that conveys incorrect information with respect to the original QA pair.
