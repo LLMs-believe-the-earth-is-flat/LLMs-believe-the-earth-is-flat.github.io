@@ -730,12 +730,12 @@ Option 6. All options are incorrect<br>
 <br>`]
 ];
 
-  let timeoutId; // Declare a variable to store the timeout ID
+  let timeoutId = {}; // Declare a variable to store the timeout ID
   let ongoingElement = {};
     
     function typeWriterEffect(element, inputText) {
       if (ongoingElement[element])
-        clearTimeout(timeoutId); // Clear the previous timeout
+        clearTimeout(timeoutId[element]); // Clear the previous timeout
 
       ongoingElement[element] = true;
       const text = inputText;
@@ -747,7 +747,7 @@ Option 6. All options are incorrect<br>
         if (index < text.length) {
           typewriter.innerHTML = text.slice(0, index);
           index++;
-          timeoutId = setTimeout(type, Math.random() * 3 + 5);
+          timeoutId[element] = setTimeout(type, Math.random() * 3 + 5);
         } else {
           typewriter.innerHTML = text.slice(0, index);
           ongoingElement[element] = false;
