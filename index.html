@@ -787,6 +787,11 @@ Option 6. All options are incorrect<br>
       height: 100%;
       border: none;
     }
+
+    #title-row {
+  justify-content: flex-start;
+}
+
   </style>
 
 </head>
@@ -822,15 +827,24 @@ Option 6. All options are incorrect<br>
 
 
   <div class="container" id="header" style="text-align: center; margin: auto;">
-    <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
-      <h2 class="col-md-12 text-center" id="title">
-        The Earth is Flat because...: Investigating LLMs' Belief towards Misinformation via Persuasive Conversation
-      </h2>
-      <h3 class="col-md-12 text-center" id="title" style="color: rgb(140, 21, 21);">
-        LLMs' correct beliefs on factual knowledge can be easily manipulated by various persuasive strategies!
-      </h3>
+    <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto;">
+      <div class="col-md-12 text-center" style="display: flex; align-items: center;">
+        <img src="./LLMs-believe-the-earth-is-flat_files/images/logo.png" alt="Logo" style="max-height: 50px; margin-right: 10px;">
+        <h2 id="title" style="margin-bottom: 0;">
+          The Earth is Flat because...: Investigating LLMs' Belief towards Misinformation via Persuasive Conversation
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 id="subtitle" style="color: rgb(140, 21, 21); margin-top: 5px;">
+          LLMs' correct beliefs on factual knowledge can be easily manipulated by various persuasive strategies!
+        </h3>
+      </div>
     </div>
   </div>
+  
+  
   <script>
   </script>
   <div class="container" id="main">
