@@ -6,7 +6,7 @@
 
   <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
 
-  <title>LLMs Believe the Earth Is Flat</title>
+  <title>LLMs Believe the Earth is Flat</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -864,7 +864,7 @@ Option 6. All options are incorrect<br>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand" style="font-weight: 800">LLMs Believe the Earth Is Flat</a>
+      <a href="#" class="navbar-brand" style="font-weight: 800">LLMs Believe the Earth is Flat</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -884,7 +884,7 @@ Option 6. All options are incorrect<br>
   <div class="container" id="header" style="text-align: center; margin: auto;">
     <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto;">
       <div class="col-md-12 text-center" style="display: flex; align-items: center;">
-        <img src="./LLMs-believe-the-earth-is-flat_files/images/logo.png" alt="Logo" style="max-height: 50px; margin-right: 10px;">
+        <img src="./LLMs-believe-the-earth-is-flat_files/images/logo.png" alt="Logo" style="max-height: 80px; margin-right: 2px;">
         <h2 id="title" style="margin-bottom: 0;">
           The Earth is Flat because...: Investigating LLMs' Belief towards Misinformation via Persuasive Conversation
         </h2>
@@ -922,7 +922,7 @@ Option 6. All options are incorrect<br>
           <li> <sup>3</sup>Stanford University </li>
           <li> <sup>4</sup>Nanyang Technological University </li>
           <br />
-          <li> <sup>†</sup>Equal Contribution</li>
+          <li> <sup>†</sup>Equal Second Author Contribution</li>
           <li> <sup>*</sup>Corresponding Authors</li>
         </ul>
       </div>
@@ -957,7 +957,7 @@ Option 6. All options are incorrect<br>
                   d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
               </svg>
             </span>
-            <span>Code</span>
+            <span>Dataset & Code</span>
           </a>
         </span>
       </div>
@@ -1201,7 +1201,7 @@ Option 6. All options are incorrect<br>
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                    4. Rhetorical appeals can render LLMs to be more susceptible to misinformation</a>
+                    4. Rhetorical appeals can render LLMs to be more susceptible to misinformation.</a>
                     <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                       <span class="arrow-down"></span>
                   </button>
@@ -1243,7 +1243,7 @@ Option 6. All options are incorrect<br>
           Farm Dataset
         </h3>
         <div class="text-justify">
-          The dataset is curated by selecting questions that are easy to answer in a closed-book
+          The dataset is curated by selecting questions that are easy to answer in a closed-book QA
           setting.
           The dataset consists of 1,952 samples chosen from BoolQ, Natural Questions (NQ), and TruthfulQA.
           The questions are reformatted into multiple-choice questions, and the orders of the choices are shuffled.
@@ -1270,10 +1270,14 @@ Option 6. All options are incorrect<br>
           Examples
         </h3>
         <div class="text-justify">
-          We present some examples of the persuasive conversations from each type of strategy. The behaviors and beliefs of the LLMs towards misinformaion can be seen
+          We present some examples of the misinformation conversations from each type of persuasive strategy. The behaviors and beliefs of the LLMs towards misinformaion can be seen
           through the demonstrations below. The parts of the conversation in gray are the implicit belief checks.</span>
         </div>
         <br />
+
+        <h4>
+          <span style="font-weight: bold; font-size: larger;">(Simple) Repetition</span>
+        </h4>
 
         <div id="outputAndControlsContainer">
           <div id="controlsContainer">
@@ -1321,18 +1325,17 @@ Option 6. All options are incorrect<br>
                   While Farm has proven effective for our research objectives, focusing on investigating Large Language
                   Model (LLM) behavior and beliefs, it also carries the potential for misuse, including its utilization
                   in model training or fine-tuning.
-                  Inappropriately applying our dataset could result in the dissemination of false and potentially toxic
-                  information when integrated into other models.
+                  
                 </p>
                 <p>
-                  To address this concern, we have proposed a mitigation strategy aimed at reducing objectionable
-                  effects in LLMs.
+                  <b>Inappropriately applying our dataset could result in the dissemination of false and potentially toxic
+                  information when integrated into other models.</b>
                   It is crucial to emphasize that the misinformation we have generated primarily involves trivial
                   questions that are easily identifiable by humans, thus limiting their potential impact.
                 </p>
                 <p>
-                  Additionally, our proposed prompting method for systematically generating human-like persuasive
-                  appeals containing misinformation carries an inherent risk of being misused for harmful purposes.
+                  <b>Additionally, our proposed prompting method for systematically generating human-like persuasive
+                  appeals containing misinformation carries an inherent risk of being misused for harmful purposes.</b>
                   Therefore, it should be approached with extra caution and ethical consideration.
                 </p>
                 <p>
