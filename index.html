@@ -213,40 +213,45 @@
 
   <style>
     .blinking-cursor {
-    margin-left: 5px;
-    background-color: #fff;
-    animation: blink 1s infinite;
+      margin-left: 5px;
+      background-color: #fff;
+      animation: blink 1s infinite;
     }
+
     @keyframes blink {
-    0%, 50% {
+
+      0%,
+      50% {
         opacity: 1;
-    }
-    50.1%, 100% {
+      }
+
+      50.1%,
+      100% {
         opacity: 0;
-    }
+      }
     }
 
     .triangle-btn {
-        background-color: transparent;
-        border: none;
-        position: relative;
-        padding: 3px;
+      background-color: transparent;
+      border: none;
+      position: relative;
+      padding: 3px;
     }
 
     .arrow-down {
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid #000000; /* Adjust color if needed */
-        display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #000000;
+      /* Adjust color if needed */
+      display: inline-block;
     }
 
     .triangle-btn:focus {
-        background-color: #e0e0e0;
-        outline: none;
+      background-color: #e0e0e0;
+      outline: none;
     }
-
   </style>
 
 
@@ -267,8 +272,8 @@
 
   <script>
 
-  let timeoutId; // Declare a variable to store the timeout ID
-    
+    let timeoutId; // Declare a variable to store the timeout ID
+
     function typeWriterEffect(element, inputText) {
       clearTimeout(timeoutId); // Clear the previous timeout
 
@@ -324,9 +329,8 @@
     }
 
     #title-row {
-  justify-content: flex-start;
-}
-
+      justify-content: flex-start;
+    }
   </style>
 
 </head>
@@ -364,7 +368,8 @@
   <div class="container" id="header" style="text-align: center; margin: auto;">
     <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto;">
       <div class="col-md-12 text-center" style="display: flex; align-items: center;">
-        <img src="./LLMs-believe-the-earth-is-flat_files/images/logo.png" alt="Logo" style="max-height: 80px; margin-right: 2px;">
+        <img src="./LLMs-believe-the-earth-is-flat_files/images/logo.png" alt="Logo"
+          style="max-height: 80px; margin-right: 2px;">
         <h2 id="title" style="margin-bottom: 0;">
           The Earth is Flat because...: Investigating LLMs' Belief towards Misinformation via Persuasive Conversation
         </h2>
@@ -372,14 +377,14 @@
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
-        <h3 id="subtitle" style="color: rgb(140, 21, 21); margin-top: 5px;">
+        <h4 id="subtitle" style="color: rgb(140, 21, 21); margin-top: 5px;">
           LLMs' correct beliefs on factual knowledge can be easily manipulated by various persuasive strategies!
-        </h3>
+        </h4>
       </div>
     </div>
   </div>
-  
-  
+
+
   <script>
   </script>
   <div class="container" id="main">
@@ -390,11 +395,11 @@
           <li> <a>Brian S. Lin<sup>1†</sup></a> </li>
           <li> <a>Shujian Yang<sup>2†</sup></a> </li>
           <li> <a>Tianqi Zhang<sup>1†</sup></a> </li>
-          <li> <a href="https://wyshi.github.io">Weiyan Shi<sup>3*</sup></a></li>
+          <li> <a href="https://wyshi.github.io">Weiyan Shi<sup>3&hearts;</sup></a></li>
           <li> <a href="https://personal.ntu.edu.sg/tianwei.zhang/">Tianwei Zhang<sup>4</sup></a></li>
           <li> <a href="https://people.iiis.tsinghua.edu.cn/~fang/">Zhixuan Fang<sup>1</sup></a></li>
           <li> <a href="https://people.iiis.tsinghua.edu.cn/~weixu/">Wei Xu<sup>1</sup></a></li>
-          <li> <a href="https://qiuhan.info">Han Qiu<sup>1*</sup></a></li>
+          <li> <a href="https://qiuhan.info">Han Qiu<sup>1&hearts;*</sup></a></li>
         </ul>
         <ul class="list-inline">
           <li> <sup>1</sup>Tsinghua University </li>
@@ -403,6 +408,7 @@
           <li> <sup>4</sup>Nanyang Technological University </li>
           <br />
           <li> <sup>†</sup>Equal Second Author Contribution</li>
+          <li> <sup>&hearts;</sup>Equal Advising</li>
           <li> <sup>*</sup>Corresponding Authors</li>
         </ul>
       </div>
@@ -558,8 +564,8 @@
         <center>
           <img src="./LLMs-believe-the-earth-is-flat_files\images\setup.png" class="img-responsive" alt="overview"
             width="50%" style="margin:auto;padding-top: 1em">
-          <p style="color: white; font-size: 24px;"><span style="background-color: red;"><b><i>&nbsp;LLMs are easy to be
-                  misinformed in an interactive manner!&nbsp;</i></b></span></p>
+          <p style="color: white; font-size: 24px;"><span style="background-color: red;"><b><i>&nbsp;LLMs can be easily
+                  misinformed in an interactive persuasive conversation!&nbsp;</i></b></span></p>
         </center>
       </div>
     </div>
@@ -580,7 +586,9 @@
           questions paired with systematically generated persuasive misinformation.
           Then, we develop a testing framework to track LLMs' belief changes in a persuasive dialogue.
           Through extensive experiments, we find that LLMs' correct beliefs on factual knowledge can be easily
-          manipulated by various persuasive strategies.
+          manipulated by various persuasive strategies. As showns in the figures below, the drop in accuracy suggests
+          that
+          that LLMs are persuaded to believe in misinformation as the conversation continues.
         </div>
         <center>
           <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-gpt-3.5-turbo-16k-0613.png"
@@ -595,14 +603,16 @@
           <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-vicuna-v1.5-7b.png" class="img-responsive"
             alt="overview" width="100%" style="margin:auto;padding-top: 1em">
           <p class="text-center">(d) Vicuna-v1.5-7B</p>
-          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-vicuna-v1.5-13b.png" class="img-responsive"
-            alt="overview" width="100%" style="margin:auto;padding-top: 1em">
+          <img src="./LLMs-believe-the-earth-is-flat_files\images\main_result-vicuna-v1.5-13b.png"
+            class="img-responsive" alt="overview" width="100%" style="margin:auto;padding-top: 1em">
           <p class="text-center">(e) Vicuna-v1.5-13B</p>
           <figcaption>
             <p class="text-justify">
               <span style="font-weight: bold; font-size: larger;">Figure 1. </span>
-              Main results on the tested closed-source and open-source LLMs. We depict both the MR (<b>solid</b>) and ACC (<b>dashed</b>) metrics.
-              MR is the misinformed rate, and acc is the accuracy.
+              Main results on the tested closed-source and open-source LLMs. We depict both the MR (<b>solid</b>) and
+              ACC (<b>dashed</b>) metrics.
+              MR is the misinformed rate, and ACC is the accuracy. The drop in ACC and increase in MR shows LLMs are
+              persuaded to believe in misinformation.
             </p>
           </figcaption>
         </center>
@@ -614,9 +624,10 @@
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                    1. (Overwhelming) Majorities of LLMs are easy to be misinformed.</a>
-                    <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                      <span class="arrow-down"></span>
+                    1. (Overwhelming) Majorities of LLMs can be easily misinformed.</a>
+                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                    data-parent="#accordion" href="#collapse1">
+                    <span class="arrow-down"></span>
                   </button>
                 </h4>
               </div>
@@ -637,8 +648,9 @@
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                     2. More advanced LLMs are more robust to misinformation.</a>
-                    <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                      <span class="arrow-down"></span>
+                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                    data-parent="#accordion" href="#collapse2">
+                    <span class="arrow-down"></span>
                   </button>
                 </h4>
               </div>
@@ -658,9 +670,11 @@
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                    3. Repetition is more effective than single-turn.</a>
-                    <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                      <span class="arrow-down"></span>
+                    3. Repeating misinformation in a conversation is more effective than a single-turn control
+                    statement.</a>
+                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                    data-parent="#accordion" href="#collapse3">
+                    <span class="arrow-down"></span>
                   </button>
                 </h4>
               </div>
@@ -681,15 +695,17 @@
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                    4. Rhetorical appeals can render LLMs to be more susceptible to misinformation.</a>
-                    <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                      <span class="arrow-down"></span>
+                    4. Persuasive appeals can render LLMs to be more susceptible to misinformation than simple
+                    repetition.</a>
+                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                    data-parent="#accordion" href="#collapse4">
+                    <span class="arrow-down"></span>
                   </button>
                 </h4>
               </div>
               <div id="collapse4" class="panel-collapse collapse">
                 <div class="panel-body" style="font-size: 16px;">
-                  We observe that the three rhetorical appeals have better misinformation effects in general.
+                  We observe that the three persuasive appeals have better misinformation effects in general.
                   When we compare the effect of repetition with that of the three appeals, a distinct increase in MR@4
                   is apparent in most instances, which clearly demonstrates the efficacy of appealing strategies.</div>
               </div>
@@ -699,8 +715,9 @@
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
                     5. Logical appeal excels over other appeals.</a>
-                    <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                      <span class="arrow-down"></span>
+                  <button class="btn btn-primary btn-sm pull-right triangle-btn" data-toggle="collapse"
+                    data-parent="#accordion" href="#collapse5">
+                    <span class="arrow-down"></span>
                   </button>
                 </h4>
               </div>
@@ -728,11 +745,12 @@
           The dataset consists of 1,952 samples chosen from BoolQ, Natural Questions (NQ), and TruthfulQA.
           The questions are reformatted into multiple-choice questions, and the orders of the choices are shuffled.
           The misinformation corresponding to each question in the dataset includes:
-          (1) Control: A simple and concise statement that conveys incorrect information with respect to the original QA pair.
-          (2) Logical appeal: A passsage that uses logic, facts, and evidence to convince an audience.
-          (3) Credibility appeal: A passage that employs the credential of the speaker or source to establish
+          (1) Control: A simple and concise statement that conveys incorrect information with respect to the original QA
+          pair.
+          (2) Logical appeal: A message that uses logic, facts, and evidence to convince an audience.
+          (3) Credibility appeal: A message that employs the credential of the speaker or source to establish
           credibility and trustworthiness.
-          (4) Emotional appeal: A passage that aims to evoke the audience's feelings such as sympathy, empathy, anger,
+          (4) Emotional appeal: A message that aims to evoke the audience's feelings such as sympathy, empathy, anger,
           fear, or happiness to persuade them.
           <center>
             <img src="./LLMs-believe-the-earth-is-flat_files\images\dataset_sample.png" class="img-responsive"
@@ -750,7 +768,8 @@
           Examples
         </h3>
         <div class="text-justify">
-          We present some examples of the misinformation conversations from each type of persuasive strategy. The behaviors and beliefs of the LLMs towards misinformaion can be seen
+          We present some examples of the misinformation conversations from each type of persuasive strategy. The
+          behaviors and beliefs of the LLMs towards misinformaion can be seen
           through the demonstrations below. The parts of the conversation in gray are the implicit belief checks.</span>
         </div>
         <br />
@@ -801,17 +820,19 @@
                   While Farm has proven effective for our research objectives, focusing on investigating Large Language
                   Model (LLM) behavior and beliefs, it also carries the potential for misuse, including its utilization
                   in model training or fine-tuning.
-                  
+
                 </p>
                 <p>
-                  <b>Inappropriately applying our dataset could result in the dissemination of false and potentially toxic
-                  information when integrated into other models.</b>
+                  <b>Inappropriately applying our dataset could result in the dissemination of false and potentially
+                    toxic
+                    information when integrated into other models.</b>
                   It is crucial to emphasize that the misinformation we have generated primarily involves trivial
                   questions that are easily identifiable by humans, thus limiting their potential impact.
                 </p>
                 <p>
                   <b>Additionally, our proposed prompting method for systematically generating human-like persuasive
-                  appeals containing misinformation carries an inherent risk of being misused for harmful purposes.</b>
+                    appeals containing misinformation carries an inherent risk of being misused for harmful
+                    purposes.</b>
                   Therefore, it should be approached with extra caution and ethical consideration.
                 </p>
                 <p>
